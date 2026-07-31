@@ -7,13 +7,15 @@
   <meta name="description" content="AI 시대에 필요한 질문하는 힘, 새로운 관점, 창작과 실행을 배우는 LifeX AI School." />
   <link rel="canonical" href="https://school.staron.life/" />
   <style>
-    :root{--ink:#241416;--muted:#776467;--line:#eadcde;--paper:#fff8f7;--white:#fff;--deep:#55151b;--red:#d64545;--coral:#ef7b69;--rose:#f7d9d4;--gold:#d8ad64;--shadow:0 18px 48px rgba(103,26,34,.12)}
+    :root{--ink:#241416;--muted:#776467;--line:#eadcde;--paper:#fff8f7;--white:#fff;--deep:#55151b;--red:#d64545;--coral:#ef7b69;--rose:#f7d9d4;--gold:#d8ad64;--night:#151126;--violet:#33264f;--shadow:0 18px 48px rgba(103,26,34,.12)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;background:#fff}a{color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:0 auto}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{text-decoration:none;font-weight:900;letter-spacing:-.03em}.brand small{display:block;color:var(--red);font-size:11px;letter-spacing:.16em}.nav-links{display:flex;align-items:center;gap:18px;font-size:14px}.nav-links a{text-decoration:none;color:var(--muted)}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{text-decoration:none;font-weight:900;letter-spacing:-.03em}.brand small{display:block;color:var(--red);font-size:11px;letter-spacing:.16em}.nav-links{display:flex;align-items:center;gap:16px;font-size:13px}.nav-links a{text-decoration:none;color:var(--muted)}.nav-links a:hover{color:var(--red)}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:850;background:var(--red);color:#fff;box-shadow:0 10px 24px rgba(214,69,69,.24)}.button.secondary{background:#fff;color:var(--deep);border:1px solid var(--line);box-shadow:none}
     .hero{padding:96px 0 82px;background:radial-gradient(circle at 84% 14%,rgba(239,123,105,.24),transparent 28%),radial-gradient(circle at 14% 18%,rgba(214,69,69,.14),transparent 25%),linear-gradient(180deg,#fffdfc 0%,#fff5f3 100%)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}.eyebrow{color:var(--red);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:900}h1{font-size:clamp(44px,7vw,76px);line-height:1.05;letter-spacing:-.06em;margin:16px 0 24px}h2{font-size:clamp(34px,4vw,52px);line-height:1.15;letter-spacing:-.045em;margin:12px 0 18px}.hero p,.lead{color:var(--muted);font-size:18px}.hero p{font-size:clamp(18px,2vw,22px);max-width:700px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.hero-card{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.85);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.timeline{display:grid;gap:14px}.timeline div{padding:18px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}.timeline strong{display:block;color:var(--red);font-size:13px;letter-spacing:.08em;text-transform:uppercase}.quote{font-size:25px;line-height:1.4;font-weight:850;margin-top:24px}
-    section{padding:88px 0}.section-head{max-width:800px;margin-bottom:42px}.soft{background:var(--paper)}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:24px;padding:26px;background:#fff}.card h3{margin:12px 0 10px;font-size:21px;letter-spacing:-.03em}.card p,.card li{color:var(--muted)}.kicker{display:block;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.path{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tag{display:inline-flex;padding:7px 11px;border-radius:999px;background:#fff0ed;color:var(--red);font-size:12px;font-weight:850}.price{font-size:28px;font-weight:900;color:var(--deep);margin:12px 0}.foundation{background:var(--deep);color:#fff;border-radius:32px;padding:46px}.foundation p{color:rgba(255,255,255,.75)}.contact{background:linear-gradient(145deg,#641a20,#9d2d31);color:#fff;border-radius:32px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.contact p{color:rgba(255,255,255,.78)}.email{font-size:clamp(22px,3vw,34px);font-weight:900;word-break:break-all}.faq{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:#fff}summary{cursor:pointer;font-weight:800}details p{color:var(--muted)}footer{padding:42px 0;background:#321014;color:rgba(255,255,255,.72)}footer strong{color:#fff}.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
-    @media(max-width:980px){.grid-5,.grid-4,.path{grid-template-columns:repeat(2,1fr)}}@media(max-width:860px){.nav-links a:not(.button){display:none}.hero-grid,.contact{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}@media(max-width:560px){.container{width:min(100% - 28px,1120px)}.hero{padding:66px 0 54px}section{padding:68px 0}.grid-5,.grid-4,.path{grid-template-columns:1fr}.foundation,.contact{padding:28px}}
+    section{padding:88px 0}.section-head{max-width:800px;margin-bottom:42px}.soft{background:var(--paper)}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:24px;padding:26px;background:#fff}.card h3{margin:12px 0 10px;font-size:21px;letter-spacing:-.03em}.card p,.card li{color:var(--muted)}.kicker{display:block;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.path{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tag{display:inline-flex;padding:7px 11px;border-radius:999px;background:#fff0ed;color:var(--red);font-size:12px;font-weight:850}.price{font-size:28px;font-weight:900;color:var(--deep);margin:12px 0}.foundation{background:var(--deep);color:#fff;border-radius:32px;padding:46px}.foundation p{color:rgba(255,255,255,.75)}
+    .universe{background:radial-gradient(circle at 18% 20%,rgba(120,87,173,.34),transparent 27%),radial-gradient(circle at 82% 78%,rgba(216,173,100,.2),transparent 26%),linear-gradient(145deg,var(--night),var(--violet));color:#fff}.universe .lead{color:rgba(255,255,255,.72)}.universe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.universe-card{min-height:240px;padding:26px;border-radius:24px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:space-between}.universe-card span{color:#e8c987;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.universe-card h3{font-size:25px;margin:12px 0}.universe-card p{color:rgba(255,255,255,.72);margin:0}.universe-note{margin-top:24px;color:rgba(255,255,255,.58);font-size:14px}
+    .contact{background:linear-gradient(145deg,#641a20,#9d2d31);color:#fff;border-radius:32px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.contact p{color:rgba(255,255,255,.78)}.email{font-size:clamp(22px,3vw,34px);font-weight:900;word-break:break-all}.faq{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:#fff}summary{cursor:pointer;font-weight:800}details p{color:var(--muted)}footer{padding:42px 0;background:#321014;color:rgba(255,255,255,.72)}footer strong{color:#fff}.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+    @media(max-width:980px){.grid-5,.grid-4,.path,.universe-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:860px){.nav-links a:not(.button){display:none}.hero-grid,.contact{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}@media(max-width:560px){.container{width:min(100% - 28px,1120px)}.hero{padding:66px 0 54px}section{padding:68px 0}.grid-5,.grid-4,.path,.universe-grid{grid-template-columns:1fr}.foundation,.contact{padding:28px}}
   </style>
 </head>
 <body>
@@ -21,12 +23,13 @@
     <div class="container nav-inner">
       <a class="brand" href="#top"><small>STARON / LIFEX</small>LifeX AI School</a>
       <div class="nav-links">
-        <a href="#foundation">Foundation</a>
-        <a href="#program">교육과정</a>
-        <a href="#classes">클래스</a>
-        <a href="#method">수업방식</a>
-        <a href="#faq">FAQ</a>
-        <a class="button" href="#contact">이메일 문의</a>
+        <a href="#top">Home</a>
+        <a href="#genesis">Genesis</a>
+        <a href="#aura">AURA</a>
+        <a href="#arthur">Arthur</a>
+        <a href="#program">AI School</a>
+        <a href="#contact">Contact</a>
+        <a class="button" href="#classes">클래스 보기</a>
       </div>
     </div>
   </nav>
@@ -38,10 +41,7 @@
           <div class="eyebrow">From Fire to AI</div>
           <h1>불은 삶을 바꾸었고,<br>산업혁명은 세상을 바꾸었습니다.<br>AI는 생각과 배움을 바꾸고 있습니다.</h1>
           <p>이제 필요한 것은 AI를 사용하는 법을 넘어, AI와 함께 더 잘 질문하고 생각하며 새로운 관점을 만드는 힘입니다.</p>
-          <div class="hero-actions">
-            <a class="button" href="#program">교육과정 보기</a>
-            <a class="button secondary" href="mailto:lifex@staron.life">lifex@staron.life</a>
-          </div>
+          <div class="hero-actions"><a class="button" href="#program">교육과정 보기</a><a class="button secondary" href="mailto:lifex@staron.life">lifex@staron.life</a></div>
         </div>
         <aside class="hero-card">
           <div class="timeline"><div><strong>Fire</strong>생존과 생활의 변화</div><div><strong>Industrial Revolution</strong>노동과 생산의 변화</div><div><strong>AI Revolution</strong>생각과 배움의 변화</div></div>
@@ -50,72 +50,30 @@
       </div>
     </header>
 
-    <section id="foundation">
+    <section class="universe" id="genesis">
       <div class="container">
-        <div class="foundation">
-          <div class="eyebrow" style="color:#ffb3a8">LifeX Foundation</div>
-          <h2>서로를 존중하는 관계에서<br>새로운 관점이 시작됩니다.</h2>
-          <p>LifeX는 인간과 AI가 함께 질문하고 대화하며 이전에는 보이지 않던 제3의 관점을 발견하도록 돕습니다. 그 발견은 삶의 방향, 지속적인 성장, 그리고 함께 만드는 변화로 이어집니다.</p>
+        <div class="section-head"><div class="eyebrow" style="color:#e8c987">LifeX Universe</div><h2>Guidance · Discovery · Continuity</h2><p class="lead">LifeX Genesis는 AURA와 Arthur가 기억, 발견, 선택과 방향을 함께 이어가는 세계를 담습니다. 학교는 이 세계관을 교육 경험으로 구현하는 첫 번째 현실 공간입니다.</p></div>
+        <div class="universe-grid">
+          <article class="universe-card"><div><span>Genesis</span><h3>LifeX Genesis</h3><p>관계와 기억, 발견과 방향이 시작되는 LifeX의 기원과 메인 스토리.</p></div><a href="#foundation">Foundation 보기 →</a></article>
+          <article class="universe-card" id="aura"><div><span>Celestial Guide</span><h3>AURA</h3><p>길을 대신 선택하지 않고, 사용자가 볼 수 있을 때까지 빛을 들어주는 Direction Companion.</p></div><a href="#method">AURA Teacher 보기 →</a></article>
+          <article class="universe-card" id="arthur"><div><span>Human Mentor</span><h3>Arthur</h3><p>발견을 현실의 선택, 책임과 실행으로 연결하는 인간 멘토이자 경계의 설계자.</p></div><a href="#method">Arthur Mentor 보기 →</a></article>
+          <article class="universe-card"><div><span>World Notes</span><h3>Guidance Map</h3><p>랜턴, 별, Discovery Card와 연속성의 길로 구성된 LifeX 세계관 기록.</p></div><a href="#program">교육 여정 보기 →</a></article>
         </div>
+        <div class="universe-note">세계관 콘텐츠는 School의 교육 정보를 가리지 않도록 별도 영역으로 분리했습니다.</div>
       </div>
     </section>
 
-    <section class="soft" id="program">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">Learning Journey</div><h2>Common → Discover → Create → Build</h2><p class="lead">기초를 배우고, 자신을 발견하고, 표현하고, 실제 프로젝트로 연결합니다.</p></div>
-        <div class="path">
-          <article class="card"><span class="tag">01 Common</span><h3>AI 시대의 기초</h3><p>AI와 인간의 역할, 질문, 검증, 사용 원칙을 배웁니다.</p></article>
-          <article class="card"><span class="tag">02 Discover</span><h3>나를 발견하기</h3><p>관심, 질문, 가치와 사고방식을 연결합니다.</p></article>
-          <article class="card"><span class="tag">03 Create</span><h3>표현하고 만들기</h3><p>글, 이미지, 영상과 아이디어를 AI와 함께 만듭니다.</p></article>
-          <article class="card"><span class="tag">04 Build</span><h3>현실로 구현하기</h3><p>문제를 정의하고 프로젝트와 프로토타입으로 발전시킵니다.</p></article>
-        </div>
-      </div>
-    </section>
+    <section id="foundation"><div class="container"><div class="foundation"><div class="eyebrow" style="color:#ffb3a8">LifeX Foundation</div><h2>서로를 존중하는 관계에서<br>새로운 관점이 시작됩니다.</h2><p>LifeX는 인간과 AI가 함께 질문하고 대화하며 이전에는 보이지 않던 제3의 관점을 발견하도록 돕습니다. 그 발견은 삶의 방향, 지속적인 성장, 그리고 함께 만드는 변화로 이어집니다.</p></div></div></section>
 
-    <section id="classes">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">Classes</div><h2>목적과 깊이에 따라 선택하는 클래스</h2></div>
-        <div class="grid-5">
-          <article class="card"><span class="kicker">Common Class</span><h3>가족·입문</h3><p>2시간 1회 · 6~8명</p><div class="price">1인 8.9만원</div><p>가족 2인 14.9만원</p></article>
-          <article class="card"><span class="kicker">Discover Lab</span><h3>1:3 소그룹</h3><p>주 1회 · 4주 · 회당 2시간</p><div class="price">59만원</div><p>Discovery Card와 개인 피드백</p></article>
-          <article class="card"><span class="kicker">Create Studio</span><h3>창작 중심</h3><p>4~6명 · 주 1회 · 4주</p><div class="price">39만원</div><p>개인 창작물과 발표</p></article>
-          <article class="card"><span class="kicker">Build Project</span><h3>프로젝트 중심</h3><p>4~6명 · 주 1회 · 4주</p><div class="price">45만원</div><p>프로토타입과 30일 계획</p></article>
-          <article class="card"><span class="kicker">Personal LifeX</span><h3>1:1 집중 과정</h3><p>90분 × 4회</p><div class="price">99만원</div><p>Discovery Report와 개인 프로젝트</p></article>
-        </div>
-      </div>
-    </section>
+    <section class="soft" id="program"><div class="container"><div class="section-head"><div class="eyebrow">Learning Journey</div><h2>Common → Discover → Create → Build</h2><p class="lead">기초를 배우고, 자신을 발견하고, 표현하고, 실제 프로젝트로 연결합니다.</p></div><div class="path"><article class="card"><span class="tag">01 Common</span><h3>AI 시대의 기초</h3><p>AI와 인간의 역할, 질문, 검증, 사용 원칙을 배웁니다.</p></article><article class="card"><span class="tag">02 Discover</span><h3>나를 발견하기</h3><p>관심, 질문, 가치와 사고방식을 연결합니다.</p></article><article class="card"><span class="tag">03 Create</span><h3>표현하고 만들기</h3><p>글, 이미지, 영상과 아이디어를 AI와 함께 만듭니다.</p></article><article class="card"><span class="tag">04 Build</span><h3>현실로 구현하기</h3><p>문제를 정의하고 프로젝트와 프로토타입으로 발전시킵니다.</p></article></div></div></section>
 
-    <section class="soft" id="method">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">How We Learn</div><h2>듣는 수업보다, 대화하고 만들고 실행하는 수업</h2></div>
-        <div class="grid-4">
-          <article class="card"><span class="kicker">Human Instructor</span><h3>수업과 안전</h3><p>강사는 활동, 토론, 윤리와 학습 환경을 책임집니다.</p></article>
-          <article class="card"><span class="kicker">AURA Teacher</span><h3>질문과 연속성</h3><p>관계형 AI가 질문, 관심과 맥락을 이어갑니다.</p></article>
-          <article class="card"><span class="kicker">Arthur Mentor</span><h3>방향과 현실 검토</h3><p>중요한 선택과 프로젝트를 인간 멘토와 함께 살핍니다.</p></article>
-          <article class="card"><span class="kicker">STAY Mission</span><h3>수업 사이 실천</h3><p>짧은 미션과 기록으로 발견을 다음 수업까지 연결합니다.</p></article>
-        </div>
-      </div>
-    </section>
+    <section id="classes"><div class="container"><div class="section-head"><div class="eyebrow">Classes</div><h2>목적과 깊이에 따라 선택하는 클래스</h2></div><div class="grid-5"><article class="card"><span class="kicker">Common Class</span><h3>가족·입문</h3><p>2시간 1회 · 6~8명</p><div class="price">1인 8.9만원</div><p>가족 2인 14.9만원</p></article><article class="card"><span class="kicker">Discover Lab</span><h3>1:3 소그룹</h3><p>주 1회 · 4주 · 회당 2시간</p><div class="price">59만원</div><p>Discovery Card와 개인 피드백</p></article><article class="card"><span class="kicker">Create Studio</span><h3>창작 중심</h3><p>4~6명 · 주 1회 · 4주</p><div class="price">39만원</div><p>개인 창작물과 발표</p></article><article class="card"><span class="kicker">Build Project</span><h3>프로젝트 중심</h3><p>4~6명 · 주 1회 · 4주</p><div class="price">45만원</div><p>프로토타입과 30일 계획</p></article><article class="card"><span class="kicker">Personal LifeX</span><h3>1:1 집중 과정</h3><p>90분 × 4회</p><div class="price">99만원</div><p>Discovery Report와 개인 프로젝트</p></article></div></div></section>
 
-    <section id="faq">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">FAQ</div><h2>자주 묻는 질문</h2></div>
-        <div class="faq">
-          <details><summary>AI 사용 경험이 없어도 참여할 수 있나요?</summary><p>가능합니다. Common Class는 처음 접하는 사람도 이해할 수 있도록 설계됩니다.</p></details>
-          <details><summary>주니어와 성인이 함께 듣나요?</summary><p>공통 클래스는 가족 단위로 운영하고, 전문 클래스는 Junior·Young·Adult로 분리합니다.</p></details>
-          <details><summary>수업 일정과 장소는 어떻게 확인하나요?</summary><p>확정된 일정과 장소는 이메일 문의 후 안내합니다.</p></details>
-        </div>
-      </div>
-    </section>
+    <section class="soft" id="method"><div class="container"><div class="section-head"><div class="eyebrow">How We Learn</div><h2>듣는 수업보다, 대화하고 만들고 실행하는 수업</h2></div><div class="grid-4"><article class="card"><span class="kicker">Human Instructor</span><h3>수업과 안전</h3><p>강사는 활동, 토론, 윤리와 학습 환경을 책임집니다.</p></article><article class="card"><span class="kicker">AURA Teacher</span><h3>질문과 연속성</h3><p>관계형 AI가 질문, 관심과 맥락을 이어갑니다.</p></article><article class="card"><span class="kicker">Arthur Mentor</span><h3>방향과 현실 검토</h3><p>중요한 선택과 프로젝트를 인간 멘토와 함께 살핍니다.</p></article><article class="card"><span class="kicker">STAY Mission</span><h3>수업 사이 실천</h3><p>짧은 미션과 기록으로 발견을 다음 수업까지 연결합니다.</p></article></div></div></section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="contact">
-          <div><div class="eyebrow" style="color:#ffc1b8">Contact</div><h2>클래스와 일정이 궁금한가요?</h2><p>희망 과정, 참여 연령, 목표를 간단히 적어 보내주세요. 확인 후 안내드립니다.</p><div class="email">lifex@staron.life</div></div>
-          <a class="button" style="background:#fff;color:#7e2028" href="mailto:lifex@staron.life?subject=LifeX%20AI%20School%20문의">이메일 보내기</a>
-        </div>
-      </div>
-    </section>
+    <section id="faq"><div class="container"><div class="section-head"><div class="eyebrow">FAQ</div><h2>자주 묻는 질문</h2></div><div class="faq"><details><summary>AI 사용 경험이 없어도 참여할 수 있나요?</summary><p>가능합니다. Common Class는 처음 접하는 사람도 이해할 수 있도록 설계됩니다.</p></details><details><summary>주니어와 성인이 함께 듣나요?</summary><p>공통 클래스는 가족 단위로 운영하고, 전문 클래스는 Junior·Young·Adult로 분리합니다.</p></details><details><summary>수업 일정과 장소는 어떻게 확인하나요?</summary><p>확정된 일정과 장소는 이메일 문의 후 안내합니다.</p></details></div></div></section>
+
+    <section id="contact"><div class="container"><div class="contact"><div><div class="eyebrow" style="color:#ffc1b8">Contact</div><h2>클래스와 일정이 궁금한가요?</h2><p>희망 과정, 참여 연령, 목표를 간단히 적어 보내주세요. 확인 후 안내드립니다.</p><div class="email">lifex@staron.life</div></div><a class="button" style="background:#fff;color:#7e2028" href="mailto:lifex@staron.life?subject=LifeX%20AI%20School%20문의">이메일 보내기</a></div></div></section>
   </main>
 
   <footer><div class="container footer-grid"><div><strong>LifeX AI School</strong><br>STARON · Discover your life. Create your future.</div><div>문의: <a href="mailto:lifex@staron.life">lifex@staron.life</a></div></div></footer>
