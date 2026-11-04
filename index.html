@@ -78,13 +78,13 @@ section{padding:88px 0}.soft{background:var(--paper)}.grid{display:grid;grid-tem
 <footer><div class="container">LifeX School · A LifeX Project by STARON · © 2026</div></footer>
 <script>
 const card=document.getElementById('discoveryCard');
-function toggleCard(){card.classList.toggle('open')}
+function toggleCard(){const opening=!card.classList.contains('open');card.classList.toggle('open');if(opening)window.staronAnalytics?.track('select_content',{content_type:'discovery_card',item_name:'direction',source:'school'});}
 card.addEventListener('click',toggleCard);
 card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleCard()}});
 const reflection=document.getElementById('reflection');
 const saved=localStorage.getItem('lifexDiscoveryReflection');
 if(saved) reflection.value=saved;
-document.getElementById('saveReflection').addEventListener('click',()=>{localStorage.setItem('lifexDiscoveryReflection',reflection.value.trim());const note=document.getElementById('savedNote');note.style.display='block';setTimeout(()=>note.style.display='none',2600)});
+document.getElementById('saveReflection').addEventListener('click',()=>{window.staronAnalytics?.track('tutorial_complete',{source:'school_discovery'});localStorage.setItem('lifexDiscoveryReflection',reflection.value.trim());const note=document.getElementById('savedNote');note.style.display='block';setTimeout(()=>note.style.display='none',2600)});
 const newsletterForm=document.getElementById('newsletterForm');
 const newsletterEmail=document.getElementById('newsletterEmail');
 const newsletterStatus=document.getElementById('newsletterStatus');
@@ -100,7 +100,7 @@ newsletterForm.addEventListener('submit',async e=>{
   const data=await res.json().catch(()=>({}));
   if(!res.ok||!data.success)throw new Error('subscribe_failed');
   newsletterStatus.textContent=data.alreadySubscribed?'이미 등록된 이메일이에요. 다음 소식에서 만나요.':'등록됐어요. 다음 질문에서 만나요.';
-  newsletterStatus.classList.add('success');newsletterEmail.value='';
+  newsletterStatus.classList.add('success');window.staronAnalytics?.track('generate_lead',{source:'school_newsletter'});newsletterEmail.value='';
  }catch(err){newsletterStatus.textContent='지금은 등록할 수 없어요. 잠시 후 다시 시도해 주세요.';newsletterStatus.classList.add('error');}
  finally{newsletterSubmit.disabled=false;newsletterSubmit.textContent='소식 받기';}
 });
@@ -110,6 +110,7 @@ if(applyBtn){applyBtn.addEventListener('click',()=>{
  const org=document.getElementById('applyOrg').value.trim();
  const email=document.getElementById('applyEmail').value.trim();
  const program=document.getElementById('applyProgram').value;
+ window.staronAnalytics?.track('generate_lead',{source:'school_apply',program});
  const subject=encodeURIComponent('LifeX School 신청 - '+program);
  const body=encodeURIComponent('이름/담당자: '+name+'\n회사/학교/기관: '+org+'\n이메일: '+email+'\n신청 프로그램: '+program+'\n\n희망 일정/문의사항:\n');
  location.href='mailto:lifex@staron.life?subject='+subject+'&body='+body;
